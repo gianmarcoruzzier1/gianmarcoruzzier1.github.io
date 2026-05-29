@@ -45,3 +45,16 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.paper {
+  margin-bottom: 1.25rem;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.paper-authors {
+  color: #555;
+  font-size: 0.95rem;
+}
