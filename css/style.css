@@ -361,6 +361,18 @@ details.paper-toggle > p {
 
 .contact-info a:hover { text-decoration: underline; }
 
+/* ── Footer ── */
+.site-footer {
+  max-width: 900px;
+  margin: 48px auto 0 auto;
+  padding: 16px 20px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  line-height: 1.5;
+}
+
 /* ── Mobile ── */
 @media (max-width: 768px) {
   .nav-name { display: none; }
