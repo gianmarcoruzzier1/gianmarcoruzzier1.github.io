@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
 }
 
-/* -- Navigation -- */
+/* ── Navigation ── */
 .site-nav {
   background: #fff;
   margin: 0 -20px 36px -20px;
@@ -76,7 +76,7 @@ body {
   color: #1a0dab;
 }
 
-/* -- Header / Bio -- */
+/* ── Header / Bio ── */
 .header-section {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -132,7 +132,7 @@ body {
 
 .intro-text a:hover { text-decoration: underline; }
 
-/* -- Working Papers -- */
+/* ── Working Papers ── */
 .research-focus {
   margin: 0 0 44px 0;
 }
@@ -152,32 +152,149 @@ body {
 .papers-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 0;
 }
 
 .paper-item {
   font-size: 15px;
   line-height: 1.55;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #f0f0f0;
 }
 
-.paper-title {
+.paper-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.paper-title-line {
   font-weight: 600;
   color: #222;
+  line-height: 1.5;
 }
 
-.paper-coauthors {
+.paper-coauthor {
+  font-weight: 400;
   color: #555;
-  margin-top: 3px;
+  font-size: 14px;
 }
 
-.paper-coauthors a {
+.paper-coauthor a {
   color: #1a0dab;
   text-decoration: none;
 }
 
-.paper-coauthors a:hover { text-decoration: underline; }
+.paper-coauthor a:hover { text-decoration: underline; }
 
-/* -- Recent Updates -- */
+.paper-date {
+  font-size: 13px;
+  color: #888;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 3px;
+}
+
+/* Action row: abstract toggle + draft/pub buttons */
+details.paper-toggle {
+  margin-top: 7px;
+}
+
+details.paper-toggle > summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+details.paper-toggle > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.paper-toggle > summary:focus {
+  outline: none;
+}
+
+.abstract-btn {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #1a0dab;
+  border: 1px solid #1a0dab;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.1s, color 0.1s;
+}
+
+.abstract-btn::before {
+  content: "\25B6";
+  font-size: 8px;
+  display: inline-block;
+  transition: transform 0.15s;
+}
+
+details.paper-toggle[open] .abstract-btn::before {
+  transform: rotate(90deg);
+}
+
+details.paper-toggle[open] .abstract-btn {
+  background: #1a0dab;
+  color: #fff;
+}
+
+.paper-action-btn {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #1a0dab;
+  border: 1px solid #1a0dab;
+  padding: 2px 8px;
+  border-radius: 3px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.1s, color 0.1s;
+}
+
+.paper-action-btn:hover {
+  background: #1a0dab;
+  color: #fff;
+}
+
+.paper-action-btn.muted {
+  color: #aaa;
+  border-color: #ddd;
+  cursor: default;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.paper-action-btn.muted:hover {
+  background: transparent;
+  color: #aaa;
+}
+
+details.paper-toggle > p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #444;
+  padding-left: 12px;
+  border-left: 2px solid #e0e0e0;
+}
+
+/* ── Recent Updates ── */
 .updates-section {
   margin-bottom: 44px;
 }
@@ -218,7 +335,7 @@ body {
   color: #555;
 }
 
-/* -- Contact -- */
+/* ── Contact ── */
 .contact-section {
   margin-top: 44px;
   padding-top: 24px;
@@ -244,7 +361,7 @@ body {
 
 .contact-info a:hover { text-decoration: underline; }
 
-/* -- Mobile -- */
+/* ── Mobile ── */
 @media (max-width: 768px) {
   .nav-name { display: none; }
 
