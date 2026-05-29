@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV &ndash; Gianmarco Ruzzier</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, serif;
+      font-size: 15px;
+      line-height: 1.55;
+      color: #111;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Toolbar (hidden when printing) */
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.8rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .toolbar a { color: #0056b3; text-decoration: none; font-size: 0.88rem; }
+    .toolbar a:hover { text-decoration: underline; }
+    .btn-pdf {
+      background: #0056b3;
+      color: #fff;
+      border: none;
+      padding: 0.45rem 1rem;
+      font-size: 0.85rem;
+      font-family: Georgia, serif;
+      cursor: pointer;
+      border-radius: 3px;
+      letter-spacing: 0.02em;
+    }
+    .btn-pdf:hover { background: #003d80; }
+
+    /* Header */
+    .cv-name {
+      font-size: 1.85rem;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .cv-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #111;
+      padding-bottom: 0.55rem;
+      margin-bottom: 0.2rem;
+    }
+    .cv-addr, .cv-info { font-size: 0.86rem; color: #333; line-height: 1.55; }
+    .cv-info { text-align: right; }
+    .cv-info a, .cv-addr a { color: #0056b3; text-decoration: none; }
+    .cv-info a:hover { text-decoration: underline; }
+
+    /* Sections */
+    .cv-section { margin-top: 1.15rem; }
+    .section-title {
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      border-bottom: 1px solid #888;
+      padding-bottom: 0.18rem;
+      margin-bottom: 0.45rem;
+    }
+    .subsection-title {
+      font-size: 0.86rem;
+      font-style: italic;
+      font-weight: bold;
+      margin: 0.55rem 0 0.2rem;
+    }
+
+    /* Entry tables */
+    table.entries {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table.entries td {
+      vertical-align: top;
+      padding: 0.15rem 0;
+      font-size: 0.88rem;
+    }
+    table.entries td.desc  { width: 85%; padding-right: 0.8rem; }
+    table.entries td.year  { width: 15%; text-align: right; white-space: nowrap; color: #444; }
+    table.entries td.yr    { width: 6%;  font-weight: bold; white-space: nowrap; padding-right: 0.8rem; }
+    table.entries td.lbl   { width: 18%; font-weight: bold; padding-right: 0.8rem; }
+
+    /* Research interests */
+    .ri { font-size: 0.88rem; margin-top: 0.45rem; }
+    .ri em { font-style: italic; }
+
+    /* Working papers */
+    .papers { list-style: none; padding: 0; }
+    .papers li {
+      font-size: 0.88rem;
+      padding: 0.18rem 0 0.18rem 1.1em;
+      position: relative;
+    }
+    .papers li::before { content: "\2022"; position: absolute; left: 0; color: #555; }
+
+    .update-note { font-size: 0.78rem; color: #999; margin-top: 1.5rem; text-align: right; }
+
+    @media print {
+      .toolbar { display: none !important; }
+      body { padding: 0; font-size: 12.5px; max-width: 100%; }
+      .cv-name { font-size: 1.5rem; }
+      a { color: #111 !important; text-decoration: none !important; }
+      @page { margin: 1.8cm 2.2cm; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a href="index.html">&larr; Back to website</a>
+  <button class="btn-pdf" onclick="window.print()">Download PDF</button>
+</div>
+
+<div class="cv">
+
+  <div class="cv-name">Gianmarco Ruzzier</div>
+  <div class="cv-header">
+    <div class="cv-addr">Banco de España<br>C. de Alcalá, 48, 28014 <br>Madrid, Spain</div>
+    <div class="cv-info">
+      Email: <a href="mailto:gianmarco.ruzzier@bde.es">gianmarco.ruzzier@bde.es</a><br>
+      Website: <a href="https://www.gianmarcoruzzier.com" target="_blank">www.gianmarcoruzzier.com</a>
+    </div>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Academic Position</div>
+    <table class="entries">
+      <tr><td class="desc">Research Economist, Financial Stability and Macroprudential Policy Department, Banco de España</td><td class="year">2024</td></tr>
+      <tr><td class="desc">Research Economist, Macrofinancial Analysis and Monetary Policy Department, Banco de España</td><td class="year">2024-2024</td></tr>
+    </table>
+    <p class="ri">Research Interests: <em>Banking, Financial Economics, Macrofinance</em></p>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Education</div>
+    <table class="entries">
+      <tr><td class="desc">Ph.D. in Economics, Finance and Management (cum Laude) Universitat Pompeu Fabra</td><td class="year">2020-2024</td></tr>
+      <tr><td class="desc">Master of Research in Economics, Universitat Pompeu Fabra, Barcelona, Spain</td><td class="year">2018-2020</td></tr>
+      <tr><td class="desc">Master of Science in Finance, Barcelona School of Economics, Barcelona, Spain</td><td class="year">2017-2018</td></tr>
+      <tr><td class="desc">Bachelor in Economics (cum Laude), Catholic University of Sacred Heart, Italy</td><td class="year">2014-2017</td></tr>
+    </table>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Working Papers</div>
+    <ul class="papers">
+      <li>Specialized banks and the transmission of monetary policy</li>
+      <li>How do lenders manage collateral risk (with Francisco Amaral)</li>
+      <li>Zombie firms and markups (with Andrea Caggese)</li>
+    </ul>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Conferences and Seminars</div>
+    <table class="entries">
+      <tr><td class="yr">2025</td><td class="desc">Financial Intermediation Society Conference, 32nd Finance Forum of the Spanish Finance Association, Scientific Workshop on Productivity, MadBar 2025, Symposium of the Spanish Economic Association</td></tr>
+      <tr><td class="yr">2024</td><td class="desc">NOVA SBE, Banco de España, Cemfi, ESCP, Banca d’Italia, Católica Lisbon, Universidad de Alicante, CUNEF, CSEF, Bank of England, SKEMA, Bank of Latvia, MoFiR Workshop 2024</td></tr>
+      <tr><td class="yr">2023</td><td class="desc">Finance Seminar – Pompeu Fabra; CREi Macro Lunch Seminar – Pompeu Fabra; BGSE Ph.D. Jamboree; SAsCa PhD Conference; NSE Workshop; MadBar Workshop; IWFAS 2023; UA Eco Junior Workshop: CREi International Lunch Seminar – Pompeu Fabra; SAEe 2023, Econometric Society Winter Meeting 2023</td></tr>
+      <tr><td class="yr">2022</td><td class="desc">Finance Seminar – Pompeu Fabra</td></tr>
+      <tr><td class="yr">2021</td><td class="desc">BGSE Ph.D. Jamboree</td></tr>
+    </table>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Referee Work</div>
+    <p style="font-size:0.88rem;">Oxford Economic Papers</p>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Teaching Experience</div>
+    <div class="subsection-title">Graduate Courses</div>
+    <table class="entries">
+      <tr><td class="yr">2022</td><td class="desc">TA Corporate Finance – Barcelona School of Economics; TA for Asset Pricing– Barcelona School of Economics; TA for Corporate Finance and Valuation – Barcelona School of Management</td></tr>
+      <tr><td class="yr">2021</td><td class="desc">TA Corporate Finance – Barcelona School of Economics; TA Asset Pricing– Barcelona School of Economics</td></tr>
+      <tr><td class="yr">2020</td><td class="desc">TA Corporate Finance – Barcelona School of Economics; TA Asset Pricing– Barcelona School of Economics</td></tr>
+      <tr><td class="yr">2019</td><td class="desc">TA Corporate Finance – Barcelona School of Economics; TA for Asset Pricing– Barcelona School of Economics; TA for Corporate Finance and Valuation – Barcelona School of Management; TA for Corporate Finance – Barcelona School of Management</td></tr>
+    </table>
+    <div class="subsection-title">Undergraduate Courses</div>
+    <table class="entries">
+      <tr><td class="yr">2022</td><td class="desc">TA for Corporate Finance – Universitat Pompeu Fabra</td></tr>
+      <tr><td class="yr">2021</td><td class="desc">TA for Corporate Finance – Universitat Pompeu Fabra; TA for Financial Management II – Universitat Pompeu Fabra</td></tr>
+      <tr><td class="yr">2020</td><td class="desc">TA for Corporate Finance – Universitat Pompeu Fabra; TA for Financial Management II – Universitat Pompeu Fabra</td></tr>
+      <tr><td class="yr">2019</td><td class="desc">TA for Corporate Finance – Universitat Pompeu Fabra; TA for Financial Management II – Universitat Pompeu Fabra; TA for Business Organization – Universitat Pompeu Fabra</td></tr>
+      <tr><td class="yr">2018</td><td class="desc">TA for Business Organization – Universitat Pompeu Fabra</td></tr>
+    </table>
+    <div class="subsection-title">Summer School</div>
+    <table class="entries">
+      <tr><td class="yr">2021</td><td class="desc">TA for Investment Summer School – Barcelona School of Economics</td></tr>
+    </table>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Additional Coursework</div>
+    <table class="entries">
+      <tr><td class="yr">2022</td><td class="desc">Casual Inference: Shift Share Instrument Variable</td></tr>
+      <tr><td class="yr">2021</td><td class="desc">Structural Estimation in Corporate Finance - Michigan Ross School of Business</td></tr>
+    </table>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Research Experience</div>
+    <table class="entries">
+      <tr><td class="yr">2020</td><td class="desc">Research Assistant for Professor Christian Eufinger</td></tr>
+      <tr><td class="yr">2019</td><td class="desc">Research Assistant for Professor Filippo Ippolito</td></tr>
+      <tr><td class="yr">2018</td><td class="desc">Research Assistant for Professor Filippo Ippolito; Research Assistant for Professor Christian Eufinger</td></tr>
+    </table>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Awards and Scholarships</div>
+    <table class="entries">
+      <tr><td class="desc">Teaching assistant Fellowship – Univesitat Pompeu Fabra</td><td class="year">2020-2023</td></tr>
+      <tr><td class="desc">Master of Research tuition waiver – Univeritat Pompeu Fabra</td><td class="year">2018-2020</td></tr>
+      <tr><td class="desc">Master tuition waiver – Barcelona School of Economics</td><td class="year">2017-2018</td></tr>
+    </table>
+  </div>
+
+  <div class="cv-section">
+    <div class="section-title">Languages and Technical Skills</div>
+    <table class="entries">
+      <tr><td class="lbl">Languages</td><td class="desc">Italian (native), English (fluent), Spanish (intermediate)</td></tr>
+      <tr><td class="lbl">Software</td><td class="desc">Stata, R, MATLAB, Python</td></tr>
+    </table>
+  </div>
+
+  <p class="update-note">Last updated: September 2025</p>
+
+</div>
+
+</body>
+</html>
