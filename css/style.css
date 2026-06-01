@@ -45,7 +45,7 @@ body {
 }
 
 .nav-name {
-  color: #1a0dab;
+  color: #0056b3;
   font-weight: 600;
   font-size: 15px;
   padding: 16px 0;
@@ -68,12 +68,12 @@ body {
 }
 
 .nav-links a.active {
-  color: #1a0dab;
-  border-bottom-color: #1a0dab;
+  color: #0056b3;
+  border-bottom-color: #0056b3;
 }
 
 .nav-links a:hover {
-  color: #1a0dab;
+  color: #0056b3;
 }
 
 /* ── Header / Bio ── */
@@ -97,7 +97,7 @@ body {
   font-size: 38px;
   font-weight: 600;
   margin: 0 0 8px 0;
-  color: #1a0dab;
+  color: #0056b3;
 }
 
 .header-content .title {
@@ -113,7 +113,7 @@ body {
 }
 
 .header-content .title a:hover {
-  color: #1a0dab;
+  color: #0056b3;
   text-decoration: underline;
 }
 
@@ -126,7 +126,7 @@ body {
 .intro-text:last-child { margin-bottom: 0; }
 
 .intro-text a {
-  color: #1a0dab;
+  color: #0056b3;
   text-decoration: none;
 }
 
@@ -182,7 +182,7 @@ body {
 }
 
 .paper-title-line a:hover {
-  color: #1a0dab;
+  color: #0056b3;
   text-decoration: underline;
 }
 
@@ -193,7 +193,7 @@ body {
 }
 
 .paper-coauthor a {
-  color: #1a0dab;
+  color: #0056b3;
   text-decoration: none;
 }
 
@@ -215,7 +215,7 @@ body {
 }
 
 .paper-authors a {
-  color: #1a0dab;
+  color: #0056b3;
   text-decoration: none;
 }
 
@@ -249,8 +249,8 @@ details.paper-toggle > summary:focus {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #1a0dab;
-  border: 1px solid #1a0dab;
+  color: #0056b3;
+  border: 1px solid #0056b3;
   padding: 2px 8px;
   border-radius: 3px;
   white-space: nowrap;
@@ -272,7 +272,7 @@ details.paper-toggle[open] .abstract-btn::before {
 }
 
 details.paper-toggle[open] .abstract-btn {
-  background: #1a0dab;
+  background: #0056b3;
   color: #fff;
 }
 
@@ -281,8 +281,8 @@ details.paper-toggle[open] .abstract-btn {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #1a0dab;
-  border: 1px solid #1a0dab;
+  color: #0056b3;
+  border: 1px solid #0056b3;
   padding: 2px 8px;
   border-radius: 3px;
   text-decoration: none;
@@ -291,7 +291,7 @@ details.paper-toggle[open] .abstract-btn {
 }
 
 .paper-action-btn:hover {
-  background: #1a0dab;
+  background: #0056b3;
   color: #fff;
 }
 
@@ -349,7 +349,7 @@ details.paper-toggle > p {
 .update-item:last-child { margin-bottom: 0; }
 
 .update-item a {
-  color: #1a0dab;
+  color: #0056b3;
   text-decoration: none;
 }
 
@@ -380,7 +380,7 @@ details.paper-toggle > p {
 }
 
 .contact-info a {
-  color: #1a0dab;
+  color: #0056b3;
   text-decoration: none;
 }
 
