@@ -196,6 +196,20 @@ body {
   margin-left: 3px;
 }
 
+.paper-authors {
+  font-size: 14px;
+  color: #555;
+  margin-top: 3px;
+  font-style: italic;
+}
+
+.paper-authors a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.paper-authors a:hover { text-decoration: underline; }
+
 /* Action row: abstract toggle + draft/pub buttons */
 details.paper-toggle {
   margin-top: 7px;
