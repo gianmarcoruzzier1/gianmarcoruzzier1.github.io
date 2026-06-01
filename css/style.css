@@ -175,6 +175,17 @@ body {
   line-height: 1.5;
 }
 
+.paper-title-line a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.paper-title-line a:hover {
+  color: #1a0dab;
+  text-decoration: underline;
+}
+
 .paper-coauthor {
   font-weight: 400;
   color: #555;
