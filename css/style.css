@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
 }
 
-/* ── Navigation ── */
+/* -- Navigation -- */
 .site-nav {
   background: #fff;
   margin: 0 -20px 36px -20px;
@@ -76,7 +76,7 @@ body {
   color: #0056b3;
 }
 
-/* ── Header / Bio ── */
+/* -- Header / Bio -- */
 .header-section {
   display: grid;
   grid-template-columns: 200px 1fr;
@@ -103,8 +103,16 @@ body {
 .header-content .title {
   font-size: 17px;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   font-style: italic;
+}
+
+.research-interests {
+  font-size: 13px;
+  color: #888;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .header-content .title a {
@@ -132,7 +140,7 @@ body {
 
 .intro-text a:hover { text-decoration: underline; }
 
-/* ── Working Papers ── */
+/* -- Working Papers -- */
 .research-focus {
   margin: 0 0 44px 0;
 }
@@ -152,38 +160,24 @@ body {
 .papers-list {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 16px;
 }
 
 .paper-item {
   font-size: 15px;
   line-height: 1.55;
-  padding-bottom: 18px;
-  margin-bottom: 18px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.paper-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 
 .paper-title-line {
   font-weight: 600;
   color: #222;
-  line-height: 1.5;
+  margin-bottom: 4px;
 }
 
-.paper-title-line a {
-  color: #222;
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.paper-title-line a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+.paper-date {
+  font-weight: 400;
+  color: #888;
+  font-size: 14px;
 }
 
 .paper-coauthor {
@@ -199,127 +193,59 @@ body {
 
 .paper-coauthor a:hover { text-decoration: underline; }
 
-.paper-date {
-  font-size: 13px;
-  color: #888;
-  font-style: italic;
-  font-weight: 400;
-  margin-left: 3px;
+.paper-toggle {
+  margin-top: 4px;
 }
 
-.paper-authors {
-  font-size: 14px;
-  color: #555;
-  margin-top: 3px;
-  font-style: italic;
-}
-
-.paper-authors a {
-  color: #0056b3;
-  text-decoration: none;
-}
-
-.paper-authors a:hover { text-decoration: underline; }
-
-/* Action row: abstract toggle + draft/pub buttons */
-details.paper-toggle {
-  margin-top: 7px;
-}
-
-details.paper-toggle > summary {
+.paper-toggle summary {
+  cursor: pointer;
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 7px;
-  flex-wrap: wrap;
-  cursor: pointer;
+  gap: 10px;
   user-select: none;
 }
 
-details.paper-toggle > summary::-webkit-details-marker {
-  display: none;
-}
-
-details.paper-toggle > summary:focus {
-  outline: none;
-}
+.paper-toggle summary::-webkit-details-marker { display: none; }
 
 .abstract-btn {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font-size: 12px;
   color: #0056b3;
   border: 1px solid #0056b3;
   padding: 2px 8px;
   border-radius: 3px;
-  white-space: nowrap;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  transition: background 0.1s, color 0.1s;
-}
-
-.abstract-btn::before {
-  content: "\25B6";
-  font-size: 8px;
-  display: inline-block;
-  transition: transform 0.15s;
-}
-
-details.paper-toggle[open] .abstract-btn::before {
-  transform: rotate(90deg);
-}
-
-details.paper-toggle[open] .abstract-btn {
-  background: #0056b3;
-  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .paper-action-btn {
-  font-size: 11px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #0056b3;
-  border: 1px solid #0056b3;
+  font-size: 12px;
+  color: #fff;
+  background: #0056b3;
   padding: 2px 8px;
   border-radius: 3px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   text-decoration: none;
-  white-space: nowrap;
-  transition: background 0.1s, color 0.1s;
 }
 
-.paper-action-btn:hover {
-  background: #0056b3;
-  color: #fff;
-}
+.paper-action-btn:hover { background: #003d80; }
 
 .paper-action-btn.muted {
-  color: #aaa;
-  border-color: #ddd;
+  background: #999;
+  color: #fff;
   cursor: default;
-  font-style: italic;
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: 0;
 }
 
-.paper-action-btn.muted:hover {
-  background: transparent;
-  color: #aaa;
-}
-
-details.paper-toggle > p {
+.paper-toggle p {
   margin-top: 10px;
   font-size: 14px;
-  line-height: 1.65;
+  line-height: 1.6;
   color: #444;
-  padding-left: 12px;
-  border-left: 2px solid #e0e0e0;
+  padding-left: 2px;
 }
 
-/* ── Recent Updates ── */
+/* -- Recent Updates -- */
 .updates-section {
   margin-bottom: 44px;
 }
@@ -360,7 +286,7 @@ details.paper-toggle > p {
   color: #555;
 }
 
-/* ── Contact ── */
+/* -- Contact -- */
 .contact-section {
   margin-top: 44px;
   padding-top: 24px;
@@ -386,19 +312,19 @@ details.paper-toggle > p {
 
 .contact-info a:hover { text-decoration: underline; }
 
-/* ── Footer ── */
+/* -- Footer -- */
 .site-footer {
   max-width: 900px;
-  margin: 48px auto 0 auto;
-  padding: 16px 20px;
+  margin: 48px auto 0;
+  padding: 16px 0 0;
   border-top: 1px solid #e0e0e0;
   font-size: 12px;
-  color: #aaa;
+  color: #999;
+  font-style: italic;
   text-align: center;
-  line-height: 1.5;
 }
 
-/* ── Mobile ── */
+/* -- Mobile -- */
 @media (max-width: 768px) {
   .nav-name { display: none; }
 
