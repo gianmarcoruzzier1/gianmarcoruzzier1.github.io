@@ -29,8 +29,10 @@
     .toolbar a { color: #0056b3; text-decoration: none; font-size: 0.88rem; }
     .toolbar a:hover { text-decoration: underline; }
     .btn-pdf {
+      display: inline-block;
       background: #0056b3;
-      color: #fff;
+      color: #fff !important;
+      text-decoration: none !important;
       border: none;
       padding: 0.45rem 1rem;
       font-size: 0.85rem;
@@ -38,6 +40,7 @@
       cursor: pointer;
       border-radius: 3px;
       letter-spacing: 0.02em;
+      margin-left: 0.5rem;
     }
     .btn-pdf:hover { background: #003d80; }
 
@@ -122,7 +125,10 @@
 
 <div class="toolbar">
   <a href="index.html">&larr; Back to website</a>&nbsp;&nbsp;<a href="research.html">Research</a>
-  <button class="btn-pdf" onclick="window.print()">Download PDF</button>
+  <span>
+    <a class="btn-pdf" href="assets/pdf/cv.pdf" target="_blank">Download PDF</a>
+    <a class="btn-pdf" href="assets/docx/cv.docx">Download Word</a>
+  </span>
 </div>
 
 <div class="cv">
